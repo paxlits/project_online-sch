@@ -2295,7 +2295,7 @@ table {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://static.tildacdn.com/tild3135-3039-4834-a639-633363346239/minecraft-s2kxfahyg3.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        background-size: 170%;
+        background-size: 180%;
         background-position: center center;
     }
     .Csharp:hover{
@@ -2310,7 +2310,7 @@ table {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://static.tildacdn.com/tild3230-6634-4438-b366-613366613230/scratch.png);
         background-size: cover;
         background-repeat: no-repeat;
-        background-size: 170%;
+        background-size: 180%;
         background-position: center center;
     }
     .Python:hover{
@@ -2338,7 +2338,7 @@ table {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://static.tildacdn.com/tild6663-3630-4062-a330-626431363037/AdobeStock_368278377.jpeg);
         background-size: cover;
         background-repeat: no-repeat;
-        background-size: 170%;
+        background-size: 180%;
         background-position: center center;
     }
     
@@ -2351,7 +2351,7 @@ table {
     }
     
     .oge2:hover{
-        width: 240px;
+    
         background-size: cover;
         background-repeat: no-repeat;
         background-size: 170%;
@@ -2359,23 +2359,32 @@ table {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://static.tildacdn.com/tild3539-6335-4137-b863-326336316264/1_L76A5gL6176UbMgn7q.jpg);
     }
     .Unity{
+        
+        width: 200px;
+        height: 200px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://static.tildacdn.com/tild6265-6635-4534-a333-316639663765/noroot.jpg);
         background-size: cover;
     }
     
     .Roblox{
+        width: 200px;
+        height: 200px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://static.tildacdn.com/tild6232-3438-4434-a334-326561626437/roblox.jpg);
         background-size: cover;
     }
     
     .Minecraft{
+        width: 200px;
+        height: 200px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://static.tildacdn.com/tild3135-3039-4834-a639-633363346239/minecraft-s2kxfahyg3.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        background-size: 170%;
+        background-size: 180%;
         background-position: center center;
     }
     .Csharp{
+        width: 200px;
+        height: 200px;
         
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://static.tildacdn.com/tild3638-3035-4861-a438-313263323437/cs.jpg);
         background-size: contain;
@@ -2384,13 +2393,17 @@ table {
         background-position: center center;
     }
     .Scratch{
+        width: 200px;
+        height: 200px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://static.tildacdn.com/tild3230-6634-4438-b366-613366613230/scratch.png);
         background-size: cover;
         background-repeat: no-repeat;
-        background-size: 170%;
+        background-size: 180%;
         background-position: center center;
     }
     .Python{
+        width: 200px;
+        height: 200px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://static.tildacdn.com/tild3764-6364-4662-b536-323438633364/python.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -2398,6 +2411,8 @@ table {
         background-position: center center;
     }
     .prog{
+        width: 200px;
+        height: 200px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://static.tildacdn.com/tild3638-3035-4861-a438-313263323437/cs.jpg);
         background-size: contain;
         background-repeat: no-repeat;
@@ -2405,6 +2420,8 @@ table {
         background-position: center center;
     }
     .htmlandcss{
+        width: 200px;
+        height: 200px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://static.tildacdn.com/tild3238-3933-4361-a164-333337616536/html.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -2412,14 +2429,18 @@ table {
         background-position: center center;
     }
     .pc{
+        width: 200px;
+        height: 200px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://static.tildacdn.com/tild6663-3630-4062-a330-626431363037/AdobeStock_368278377.jpeg);
         background-size: cover;
         background-repeat: no-repeat;
-        background-size: 170%;
+        background-size: 180%;
         background-position: center center;
     }
     
     .oge1{
+        width: 200px;
+        height: 200px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://static.tildacdn.com/tild6137-3264-4537-b937-646532393062/ise-RGB_hu378a303bde.jpg);
         background-size: cover;
         background-repeat: no-repeat;
@@ -2428,7 +2449,9 @@ table {
     }
     
     .oge2{
-        width: 240px;
+        width: 200px;
+        height: 200px;
+        width: 210px;
         background-size: cover;
         background-repeat: no-repeat;
         background-size: 170%;
@@ -2499,7 +2522,13 @@ table {
         width: 350px;
         font-size: 30px
     }
-
+    .inner_text2 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        font-family: "TildaSans-light";
+        font-size: 15px;
+    }
 }
 @media screen and (width <= 1100px){
     .logo1 {
@@ -2568,5 +2597,53 @@ table {
     }
     .odd-get2 {
         margin-left: 250px;
+    }
+}
+@media screen and (width <= 896px) {
+    .first_screen { 
+        top: 0;
+    }
+    .label {
+        width: 359px;
+        text-align: center;
+        font-size: 32px;
+        display: inline-block;
+    }
+    .advantages {
+        top: 0;
+    }
+    .background-img{
+        width: 100%;
+    }
+
+    #header{
+        position: fixed;
+        bottom: 0;
+
+    }
+
+    .kids{
+        width: 360px;
+        text-align: center;
+        display: inline-block;
+        top: 180px;
+
+    }
+
+    .sign-up{
+        text-align: center;
+        display: inline-block;
+        position: relative;
+    }
+    .descirption_div {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .description{
+        margin-left: auto;
+        margin-right: auto;
+        width:100%;
+
     }
 }
