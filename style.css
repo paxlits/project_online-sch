@@ -15,17 +15,22 @@
     src: url("fonts/TildaSans-Light.ttf") format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
+
+}
+
+html {
+    scroll-behavior: smooth;
 }
 body {
     overflow-x: hidden;
     background-color: #000;
 }
 #header {
-    width: 100%;
+    width: 100vw;
+    z-index: 100;
     height: 98px;
     display: flex;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    background-color: #FFFFFF;
     position: fixed;
     justify-content: center;
 }
@@ -89,7 +94,7 @@ body {
     font-size: 13px;
     text-decoration: none;
     margin-left: 20px;
-    color: white;
+    color: black;
     position: relative;
     text-decoration: none;
     list-style-type: none;
@@ -138,7 +143,7 @@ p {
     border: 0;
     text-align: center;
     vertical-align: middle;
-    z-index: 100;
+    z-index: 10;
     color: #FFF;
     border-radius: 30px;
     width: 255px;
@@ -161,7 +166,7 @@ p {
     border: 0;
     text-align: center;
     vertical-align: middle;
-    z-index: 100;
+    z-index: 10;
     color: #FFF;
     border-radius: 30px;
     width: 432px;
@@ -359,6 +364,7 @@ p {
     display: inline-block;
 }
 .arrow-to-get {
+    z-index: -10;
     position: absolute;
     transform: rotate(234deg);
     opacity: 0.4;
@@ -1490,7 +1496,8 @@ input:checked+p {
     transform: scale(1.18);
 }
 .label-faq {
-    margin-top: 20px;
+    position: relative;
+    top: 20px;
     margin-bottom: 100px;
     font-family: "TildaSans-bold";
     font-weight: 900;
@@ -1522,7 +1529,7 @@ input:checked+p {
     background-color: white;
 }
 .question {
-    border-top: rgba(0, 0, 0, 0.2) 1px solid;
+    
     padding-top: 30px;
 }
 .list-questions {
@@ -1543,11 +1550,12 @@ input:checked+p {
     font-family: "TildaSans";
 }
 .answer {
+    border-bottom: rgba(0, 0, 0, 0.2) 1px solid;
     height: 100px;
     line-height: 1.55;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
-    overflow-y: hidden;
+    overflow-y: auto;
     font-size: 18px;
     color: #000000;
     font-weight: 400;
@@ -1570,7 +1578,9 @@ input:checked+p {
 }
 
 .message1{
-    font-family: "TildaSans";
+    font-family: "TildaSans-light";
+    font-weight: 600;
+    line-height: 1.55;
     font-size: 18px;
     text-align: left;
     display: inline-block;
@@ -1594,7 +1604,8 @@ input:checked+p {
     background: #fff;
     border-radius: 15px;
     padding: 35px;
-    padding-bottom: 58px;
+    height: 243.6px;
+    padding-bottom: 35px;
     text-align: center;
     color: #000;
   }
@@ -1644,7 +1655,9 @@ bottom: -24px;
     text-align: center;
     color: #000;
   }
-  
+tr {
+    display: flex;
+}
 .bubble-bottom-left1:before {
 content: "";
 width: 0px;
@@ -1663,6 +1676,7 @@ bottom: -24px;
     height: 50px;
     border-radius: 50%;
     margin-top: 40px;
+    object-fit:cover;
     margin-left: 10px;
     text-align: left;
 
@@ -1718,7 +1732,7 @@ bottom: -24px;
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 170%;
-    margin-top: 40px;
+    margin-top: 0px;
 }
 
 .avap1{
@@ -1738,6 +1752,8 @@ bottom: -24px;
 }
 
 .prof1{
+    top: 30px;
+    position: relative;
     display: inline-block;
 }
 
@@ -1758,16 +1774,20 @@ bottom: -24px;
     color:#ffffff;
     font-family: "TildaSans";
     font-size: 16px;
-    display: inline;
     padding: 0;
+    vertical-align: center;
     margin: 0;
+    position: relative;
     text-align: left;
 }
 
 .town1{
+    vertical-align: top;
+    display: inline;
     color:#ffffff;
     font-family: "TildaSans";
     font-size: 12px;
+    position: relative;
     text-align: left;
     
 }   
@@ -1835,7 +1855,7 @@ bottom: -24px;
     background: #fff;
     border-radius: 15px;
     padding: 35px;
-    padding-top: 83px;
+    padding-top: 35px;
     text-align: center;
     color: #000;
 
@@ -1929,9 +1949,6 @@ table {
     margin-left: auto;
     margin-bottom: 40px;
 }
-#header.active {
-    background-color: white;
-}
 @keyframes up-down1 {
     0% {
         transform: translate(0%, 0%) rotate(45deg);
@@ -1991,5 +2008,209 @@ table {
     }
     100% {
         opacity: 0%;
+    }
+}
+@media screen and (width <= 1750px) {
+    .content-header {
+        width: 95%;
+    }
+}
+@media screen and (width <= 1400px) {
+    .odd_advantages {
+        margin-left: 20px;
+    }
+}
+@media screen and (min-width: 2300px) {
+    
+    .arrow-to-get {
+        left: 20%;
+    }
+}
+@media screen and (min-width: 3000px) {
+    
+    .arrow-to-get {
+        left: 30%;
+    }
+}
+@media screen and (min-width: 4000px) {
+    
+    .arrow-to-get {
+        left: 40%;
+    }
+}
+@media screen and (width <= 1350px) {
+    .answer {
+        position: relative;
+        top: 20px;
+    }
+    .first-object_advantages {
+        width: 150px;
+    }
+    .third-object_advantages {
+        width: 150px;
+    }
+    .second-object_advantages {
+        width: 150px;
+    }
+    .fourth-object_advantages {
+        width: 150px;
+    }
+    .name-advantages {
+        font-size: 25px;
+    }
+    .description-advantages {
+        font-size: 20px;
+        width: 500px;
+    }
+    .odd_advantages {
+        margin-left: 80px;
+        width: 900px;
+    }
+}
+@media screen and (width <= 1350px) {
+    .arrow-to-get {
+        top: 1170px;
+    }
+    .img-main-kids {
+        height: auto;
+    }
+    .even_advantages {
+        margin-left: 600px;
+    }
+    .info-get {
+        margin-left: 0px;
+    }
+    .info-get2 {
+        margin-right: 0px;
+    }
+    .odd-get {
+        margin-left: 50px;
+    }
+    .odd-get2 {
+        margin-left: 350px;
+    }
+}
+@media screen and (width <= 1250px) {
+    .img-main-kids {
+        height: auto;
+    }
+    .label {
+        font-size: 35px;
+        line-height: 1.2;
+    }
+    .description {
+        line-height: 1.2;
+        font-size: 25px;
+    }
+    .odd_advantages {
+        margin-left: 150px;
+    }
+    .even_advantages {
+        margin-left: 600px;
+    }
+    .info-get {
+        margin-left: 0px;
+    }
+    .info-get2 {
+        margin-right: 0px;
+    }
+    .odd-get {
+        margin-left: 100px;
+    }
+    .odd-get2 {
+        margin-left: 350px;
+    }
+    .second-object-get {
+        width: 150px;
+        vertical-align: bottom;
+    }
+    .first-object-get {
+        width: 150px;
+        vertical-align: bottom;
+    }
+}
+@media screen and (width <= 1179px ) {
+    .name-package {
+        font-size: 20px;
+    }
+    #free {
+        font-size: 20px;
+    }
+    .odd_advantages {
+        margin-left: 200px;
+    }
+    .description-advantages {
+        width: 400px;
+    }
+    .package {
+        height: 210px;
+    }
+    .price-package {
+        font-size: 20px;
+    }
+    .amount-lesson-pack {
+        font-size: 20px;
+    }
+    .price-for {
+        font-size: 18px;
+    }
+    .package:hover .amount-lesson-pack{
+        font-size: 30px;
+        transition: all 0.15s ease;
+    }
+    .message1 {
+        font-size: 16px;
+        line-height: 1.0;
+    }
+    .bubble {
+        width: 390px;
+    }
+    .img-main-kids {
+        width: 400px;
+    }
+    .direction-bottom-kids {
+        width: 350px;
+        font-size: 30px
+    }
+
+}
+@media screen and (width <= 1100px){
+    .first-object-get {
+        width: 100px;
+    }
+    .second-object-get {
+        width: 100px;
+    }
+    .odd-get {
+        margin-left: 180px;
+    }
+}
+@media screen and (width <= 1000px) {
+    .label {
+        font-size: 25px;
+    }
+    .description {
+        font-size: 18px;
+    }
+    .price-for {
+        text-align: center;
+    }
+    .amount-lesson-pack {
+        margin-top: 10px;
+    }
+    .package:hover .amount-lesson-pack {
+        font-size: 25px;
+    }
+    .package:hover .price-package {
+        font-size: 25px;
+    }
+    .odd_advantages {
+        margin-left: 300px;
+    }
+    .odd-get {
+        margin-left: 250px;
+    }
+    .odd-get2 {
+        margin-left: 250px;
     }
 }
