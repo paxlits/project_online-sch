@@ -2916,6 +2916,12 @@ table {
     .answer {
         height: auto;
     }
+    .logo {
+        display: none;
+    }
+    li {
+        font-size: 10px;
+    }
     td {
         flex-flow: column;
     }
