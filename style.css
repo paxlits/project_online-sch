@@ -2597,6 +2597,7 @@ table {
     .description {
         font-size: 18px;
     }
+    
     .price-for {
         text-align: center;
     }
@@ -2620,17 +2621,135 @@ table {
     }
 }
 @media screen and (width <= 896px) {
+    .description-advantages {
+        width: auto;
+    }
+    @keyframes up-down1 {
+        0% {
+            transform: translate(0%, 0%) rotate(45deg);
+        }
+        50% {
+            transform: translate(0%, -20%) rotate(45deg);
+        }
+        100% {
+            transform: translate(0%, 0%) rotate(45deg)
+        }
+    }
+    @keyframes up-down2 {
+        0% {
+            transform: translate(0%, 0%) rotate(270deg);
+        }
+        50% {
+            transform: translate(0%, -20%) rotate(270deg);
+        }
+        100% {
+            transform: translate(0%, 0%) rotate(270deg)
+        }
+    }
+    @keyframes up-down3 {
+        0% {
+            transform: translate(0%, 0%) rotate(315deg);
+        }
+        50% {
+            transform: translate(0%, -20%) rotate(315deg);
+        }
+        100% {
+            transform: translate(0%, 0%) rotate(315deg)
+        }
+    }
+    @keyframes up-down4 {
+        0% {
+            transform: translate(0%, 0%) rotate(0deg);
+        }
+        50% {
+            transform: translate(0%, -25%) rotate(0deg);
+        }
+        100% {
+            transform: translate(0%, 0%) rotate(0deg)
+        }
+    }
+    .first-object_advantages {
+        width: 130px
+    }
+    .second-object_advantages {
+        width: 130px
+    }
+    .third-object_advantages {
+        width: 130px
+    }
+    .kids {
+        order: 1;
+    }
+    .description {
+        order: 2;
+        width: 70%;
+        margin-left: auto;
+        text-align: center;
+        margin-right: auto;
+    }
+    .sign-up {
+        order: 3;
+    }
+    .descirption_div {
+        flex-flow: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .first_screen {
+        flex-flow: column;
+    }
+    .arrow-to-us-advantages {
+        display: none;
+    }
     .first_screen { 
         top: 0;
+    }
+    .background-img {
+        display: none;
     }
     .label {
         width: 359px;
         text-align: center;
-        font-size: 32px;
+        font-size: 25px;
         display: inline-block;
     }
+    .direction-bottom-kids {
+        width: 300px;
+        left: 25px;
+        right: 0px;
+    }
+    .arrow-to-get {
+        left: -100px;
+        top: 1700px;
+    }
+    .info-advantage {
+        text-align: center;
+    }
     .advantages {
-        top: 0;
+        top: 10px;
+        font-size: 25px;
+    }
+    .list-advantages {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .odd_advantages {
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+    .even_advantages {
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
     }
     .background-img{
         width: 100%;
@@ -2645,16 +2764,22 @@ table {
         justify-content: center;
 
     }
-
+    .svg-container {
+        display: inline-block;
+        overflow: hidden;
+        justify-content: center;
+    }
     .kids{
         width: 360px;
         text-align: center;
         display: inline-block;
-        top: 180px;
+        top: 0px;
 
     }
 
     .sign-up{
+        margin-top: 20px;
+        padding-top: 6px;
         text-align: center;
         display: inline-block;
         position: relative;
@@ -2664,10 +2789,5 @@ table {
         margin-right: auto;
         width: 100%;
     }
-    .description{
-        margin-left: auto;
-        margin-right: auto;
-        width:100%;
 
-    }
 }
