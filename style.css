@@ -212,6 +212,7 @@ p {
     width: 649px;
 }
 .first_screen {
+    flex-flow: row;
     position: relative;
     top: 120px;
     width: auto;
@@ -261,8 +262,11 @@ p {
     flex-flow: column;
 
 }
-.odd_adventages {
-    width: 822px;
+.svg-container {
+    display: inline-block;
+}
+.odd_advantages {
+    margin-left: 5vw;
     position: relative;
 }
 .first-object_advantages {
@@ -2621,6 +2625,31 @@ table {
     }
 }
 @media screen and (width <= 896px) {
+    .main_text1 {
+        font-size: 28px;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ttl1 {
+        position: relative;
+        top: 30px;
+        height: 100px;
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 25px;
+    }
+    .list-what-get {
+        top: 20px;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        display: flex;
+        flex-flow: column;
+    
+    }
+
     .description-advantages {
         width: auto;
     }
@@ -2765,9 +2794,10 @@ table {
 
     }
     .svg-container {
+        height: auto;
         display: inline-block;
         overflow: hidden;
-        justify-content: center;
+        
     }
     .kids{
         width: 360px;
@@ -2776,7 +2806,36 @@ table {
         top: 0px;
 
     }
-
+    .odd-get, .odd-get2 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70vw;
+    }
+    .description-get, .description-get2 {
+        width: auto;
+        font-family: "Tilda-light";
+    }
+    .what-are-u-get {
+        position: relative;
+        top: 20px;
+        font-size: 30px;
+    }
+    .first-object-get {
+        position: absolute;
+        opacity: 0.3;
+        transform: translate(-50vw, 0);
+        z-index: -2;
+        left: 50vw;
+        width: 50vw;
+    }
+    .second-object-get  {
+        position: absolute;
+        opacity: 0.3;
+        transform: translate(-50vw, 0);
+        z-index: -2;
+        left: 70vw;
+        width: 50vw;
+    }
     .sign-up{
         margin-top: 20px;
         padding-top: 6px;
