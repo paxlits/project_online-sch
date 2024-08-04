@@ -132,6 +132,7 @@ p {
     width: 50%;
 }
 .label {
+    display: inline-block;
     line-height: 81px;
     font-size: 52px;
     top: 50px;
@@ -912,7 +913,7 @@ tr {
     height: 12%;
     z-index: -1;
     left:30%;
-    top:3355px;
+    top:3380px;
 }
 
 .arrow2{
@@ -1010,6 +1011,15 @@ tr {
     color: white;
     font-family: "TildaSans";
 }
+input:focus+p {
+    transform: translate(0, -10%) scale(1.12);
+
+  }
+
+.radio-type-lesson {
+
+    display: none;
+}
 .custom-radio::before {
     content: "";
     display: inline-block;
@@ -1045,18 +1055,12 @@ input[type='radio'] {
     position: relative;
     top: 4px;
   }
-.label-type-lessons:checked+p {
-    
+.radio-type-lesson:checked+p {
+    font-family: "TildaSans-bold";
+    font-weight: 900;
     border-bottom: 10px #604cff solid;
   }
-  input:focus+p {
-    transform: translate(0, -10%) scale(1.12);
-
-  }
-.radio-type-lesson {
-
-    display: none;
-}
+  
 .label-type-lessons {
     border-bottom: 10px white solid;
     color: white;
@@ -1076,32 +1080,8 @@ input[type='radio'] {
     margin-top: 80px;
     justify-content: center;
 }
-.package {
-    border-radius: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    display: flex;
-    align-items: center;
-    flex-flow: column;
-    background-color: #604cff;
-    margin-right: 20px;
-    width: 180px;
-    height: 230px;
-    transition: all 0.3s ease;
-}
-.package:hover {
-    
-    transform: translate(0, -10%) scale(1.12);
-    transition: all 0.15s ease;
-}
-.package:hover .price-package{
-    font-size: 40px;
-    transition: all 0.15s ease;
-}
-.package:hover .amount-lesson-pack{
-    font-size: 37px;
-    transition: all 0.15s ease;
-}
+
+
 #name-lastname-label {
     margin-bottom: 8px;
 }
@@ -1126,18 +1106,6 @@ input[type='radio'] {
     margin-top: 10px;
     font-family: 'TildaSans-bold',Arial,sans-serif;
     font-weight: 900;
-}
-.dolyami_div {
-    margin-top: 100px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    background-color: #604cff;
-    transform: translate(-50%, 0%);
-    left: 50%;
-    align-items: center;
-    border-radius: 30px;
-    width: 1200px;
 }
 .notice {
     color: #ffffff;
@@ -1499,7 +1467,7 @@ input:checked+p {
     left: 50%;
     align-items: center;
     border-radius: 30px;
-    width: 1200px;
+    width: 80vw;
 }
 .notice {
     color: #ffffff;
@@ -2625,11 +2593,77 @@ table {
     }
 }
 @media screen and (width <= 896px) {
-    .main_text1 {
-        font-size: 28px;
-        width: 90vw;
+    .row-packages {
+        flex-flow: column;
+        margin-top: 10px;
+      }
+      #pack1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #free {
+        position: relative;
         margin-left: auto;
         margin-right: auto;
+      }
+      #prob-lesson {
+        margin-left: 0px;
+      }
+      .package {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 10px;
+        width: 80vw;
+        height: 25vw;
+        padding: 0;
+        margin-left: auto;
+        text-align: inherit;
+        margin-right: auto;
+      }
+    .amount-lesson-pack {
+        position: relative;
+        text-align: right;
+        margin-right: 10px;
+        margin-top: 0px;
+        top: 0px;
+        right: 0px;
+    }
+    .name-package {
+        margin-left: 22px;
+        text-align: left;
+        grid-area: 1 / 1;
+    }
+    .price-package {
+        margin-top: 0px;
+        margin-bottom: 5px;
+        font-size: 28px;
+        margin-right: 10px;
+        grid-area: 2 / 2;
+        justify-self: end;
+        align-self: end;
+    }
+    .price-for {
+        margin-bottom: 5px;
+        grid-area: 2 / 1;
+        align-self: end;
+    }
+    .main_text1 {
+        font-size: 28px;
+        width: 95vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .second_text1 {
+        width: 75vw;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 15px;
+    }
+    .label-type-lessons {
+        width: 40vw;
+        font-size: 20px;
     }
     .ttl1 {
         position: relative;
@@ -2638,7 +2672,7 @@ table {
         width: 70vw;
         margin-left: auto;
         margin-right: auto;
-        font-size: 25px;
+        font-size: 22px;
     }
     .list-what-get {
         top: 20px;
@@ -2649,6 +2683,9 @@ table {
         flex-flow: column;
     
     }
+    .amount-lesson-pack {
+        display: inline-block;
+    }
 
     .description-advantages {
         width: auto;
@@ -2658,7 +2695,7 @@ table {
             transform: translate(0%, 0%) rotate(45deg);
         }
         50% {
-            transform: translate(0%, -20%) rotate(45deg);
+            transform: translate(0%, -15%) rotate(45deg);
         }
         100% {
             transform: translate(0%, 0%) rotate(45deg)
@@ -2669,7 +2706,7 @@ table {
             transform: translate(0%, 0%) rotate(270deg);
         }
         50% {
-            transform: translate(0%, -20%) rotate(270deg);
+            transform: translate(0%, -15%) rotate(270deg);
         }
         100% {
             transform: translate(0%, 0%) rotate(270deg)
@@ -2680,7 +2717,7 @@ table {
             transform: translate(0%, 0%) rotate(315deg);
         }
         50% {
-            transform: translate(0%, -20%) rotate(315deg);
+            transform: translate(0%, -15%) rotate(315deg);
         }
         100% {
             transform: translate(0%, 0%) rotate(315deg)
@@ -2691,44 +2728,58 @@ table {
             transform: translate(0%, 0%) rotate(0deg);
         }
         50% {
-            transform: translate(0%, -25%) rotate(0deg);
+            transform: translate(0%, -20%) rotate(0deg);
         }
         100% {
             transform: translate(0%, 0%) rotate(0deg)
         }
     }
     .first-object_advantages {
-        width: 130px
+        animation: up-down1 3s linear infinite;
+        width: 100px;
+        
     }
     .second-object_advantages {
-        width: 130px
+        animation: up-down2 2.8s linear infinite;
+        width: 100px
     }
     .third-object_advantages {
-        width: 130px
+        animation: up-down3 3.2s linear infinite;
+        width: 100px
+    }
+    .fourth-object_advantages {
+        animation: up-down4 3s linear infinite;
+        width: 100px
     }
     .kids {
-        order: 1;
+        margin-left: auto;
+        margin-right: auto;
+
     }
     .description {
-        order: 2;
         width: 70%;
         margin-left: auto;
         text-align: center;
         margin-right: auto;
     }
-    .sign-up {
-        order: 3;
-    }
     .descirption_div {
+
         flex-flow: column;
         display: flex;
+        margin-top: 0px;
         align-items: center;
         justify-content: center;
     }
     .first_screen {
         flex-flow: column;
     }
-    .arrow-to-us-advantages {
+    .stext1 {
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw;
+    }
+    #container-arrow-to-advan {
         display: none;
     }
     .first_screen { 
@@ -2738,6 +2789,8 @@ table {
         display: none;
     }
     .label {
+        margin-left: auto;
+        margin-right: auto;
         width: 359px;
         text-align: center;
         font-size: 25px;
@@ -2750,7 +2803,7 @@ table {
     }
     .arrow-to-get {
         left: -100px;
-        top: 1700px;
+        top: 1850px;
     }
     .info-advantage {
         text-align: center;
@@ -2813,11 +2866,14 @@ table {
     }
     .description-get, .description-get2 {
         width: auto;
-        font-family: "Tilda-light";
+        font-family: "TildaSans-light";
     }
     .what-are-u-get {
         position: relative;
         top: 20px;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
         font-size: 30px;
     }
     .first-object-get {
@@ -2843,10 +2899,71 @@ table {
         display: inline-block;
         position: relative;
     }
+    .dolyami_div {
+        margin-top: 0;
+    }
     .descirption_div {
         margin-left: auto;
         margin-right: auto;
         width: 100%;
     }
+    .list-questions {
+        width: 100vw;
+    }
+    .question-main {
+        height: 80px;
+    }
+    .answer {
+        height: auto;
+    }
+    td {
+        flex-flow: column;
+    }
+    .decription-dolyami_div {
 
+        text-align: center;
+    }
+    .description-dolyami1 {
+        font-size: 16px;
+    }
+    .description-dolyami2 {
+        font-size: 13px;
+    }
+    .dolyami_div {
+        background: transparent;
+        flex-flow: column;
+    }
+    .btn-dolyami {
+        margin-left: 0;
+    }
+    .label-request {
+        font-size: 16px;
+    }
+    .object-under-instruction {
+        display: none;
+    }
+    .message1 {
+        font-weight: 100;
+
+    }
+    .bubble {
+        padding: 10px;
+        width: 80vw;
+    }
+    .form-instruction {
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+    }
+    .instruction {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80vw;
+    }
+    .instruction-p {
+        font-size: 14px;
+    }
+    .request-form {
+        width: 90vw;
+    }
 }
