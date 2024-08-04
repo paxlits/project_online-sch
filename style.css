@@ -2795,6 +2795,7 @@ table {
         text-align: center;
         font-size: 25px;
         display: inline-block;
+
     }
     .direction-bottom-kids {
         width: 300px;
@@ -2971,5 +2972,76 @@ table {
     }
     .request-form {
         width: 90vw;
+    }
+
+    .logo-company{
+        position: absolute;
+        text-align: left;
+        z-index: 100;
+    }
+
+    .logo-footer{
+        height: auto;
+        width: 120px;
+        display: inline-block;
+    }
+
+    .company-info-footer{
+        display: block;
+        margin-top: 0px;
+    }
+
+    .links-footer{
+        display: inline-block;
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+
+    .link-footer{
+        margin-top: 70px;
+    }
+
+    .media-link{
+        display: inline-block;
+    }
+
+    .media2{
+        display: inline-block;
+    }
+
+    .question-main{
+        margin-left: 20px;
+        width: 90%;
+    }
+
+    .answer{
+        margin-left: 20px;
+        padding-bottom: 15px;
+    }
+
+    .message1{
+        font-size: 16px;
+        line-height: 20px;
+        font-family: "TildaSans-Medium";
+    }
+
+    .Unity{
+        width: 80vw;
+        margin-bottom: 10px;
+        height: 25vw;
+    }
+
+    .logo1{
+        position: absolute;
+        box-sizing: border-box;
+        display: table;
+    }
+
+    .inner_text1{
+        display: inline-block;
+    }
+
+    .inner_text2{
+        display: inline-block;
     }
 }
